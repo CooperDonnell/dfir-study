@@ -1,7 +1,9 @@
 # DFIR Education Portfolio
 
 This repository documents a focused 105-hour digital forensics and incident
-response training sprint completed from June 22 through August 7, 2026.
+response training sprint from June 22 through August 7, 2026. It begins from a
+documented beginner baseline and emphasizes measurable improvement rather than
+implied prior expertise.
 
 ## Goals
 
@@ -51,3 +53,5 @@ Every published case will include:
 
 The detailed schedule is in [STUDY_PLAN.md](STUDY_PLAN.md). The working
 checklist is in [TRACKER.md](TRACKER.md).
+
+The starting assessment is in [notes/baseline.md](notes/baseline.md).

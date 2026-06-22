@@ -2,10 +2,11 @@
 
 ## Baseline
 
-- [ ] Write initial knowledge assessment
+- [x] Write initial knowledge assessment
 - [ ] Record current resume strengths and gaps
 - [ ] Confirm lab can safely analyze public evidence
 - [ ] Set all investigation timelines to UTC
+- [ ] Explain five forensic commands without AI assistance
 
 ## Weekly shipping
 

@@ -108,19 +108,21 @@ malware, or evidence that you do not have redistribution rights for.
 
 ## Week 1 — Foundations and lab discipline
 
-**Objective:** Understand the investigation lifecycle, establish a repeatable
-workflow, and become conversationally competent with core Windows artifacts.
+**Objective:** Build the missing investigation foundation before using advanced
+tools: evidence, artifacts, live versus dead-box analysis, triage questions,
+the response lifecycle, and introductory Windows artifacts.
 
 | Date | Three-hour assignment | Required output |
 |---|---|---|
-| Mon Jun 22 | Baseline assessment: explain the IR lifecycle, chain of custody, hashing, order of volatility, MFT, Registry, event logs, prefetch, memory, PCAP, SIEM, EDR, and ATT&CK without references. Read the executive portions of NIST SP 800-61 Rev. 3. | `notes/baseline.md` with green/yellow/red ratings and 10 questions you cannot yet answer |
-| Tue Jun 23 | Build/verify the lab. Configure UTC, snapshots, shared folders, Git, Python, and a Windows VM. Record evidence-handling rules. | Reproducible `lab-setup.md`; no secrets or license keys |
-| Wed Jun 24 | Learn NTFS essentials: MFT, MACB timestamps, USN Journal, `$LogFile`, ADS, deleted files, and timestamp limitations. Perform a small controlled file-activity experiment. | Artifact table: what each source can and cannot prove |
-| Thu Jun 25 | Learn Windows execution and persistence artifacts: Prefetch, Amcache, Shimcache, SRUM, services, scheduled tasks, Run keys, LNK, Jump Lists, PowerShell, and common event IDs. | `notes/windows-artifacts.md` organized by investigative question |
-| Fri Jun 26 | Mini-triage: examine a small Windows artifact set. Build a 10-20-event UTC timeline and give a five-minute verbal briefing. | First mini-report and recorded self-critique |
+| Mon Jun 22 | Complete the baseline assessment. Learn the difference between evidence, artifacts, indicators, observations, hypotheses, and findings. Refine the hashing answer and begin the NIST incident-response lifecycle. | `notes/baseline.md` and a one-page vocabulary sheet |
+| Tue Jun 23 | Verify the existing Windows and Linux VMs rather than rebuilding them. Configure UTC, snapshots, shared folders, Git, and Python. Learn evidence preservation, chain of custody, order of volatility, and live versus dead-box analysis. | Reproducible `lab-setup.md` plus an evidence-handling checklist |
+| Wed Jun 24 | Learn a basic endpoint triage sequence after a malicious attachment: user/context, file provenance, process tree, command line, persistence, network activity, authentication, scope, and impact. Perform a controlled file/process experiment in the VM. | Investigation-question checklist and observed-artifact log |
+| Thu Jun 25 | Learn introductory Windows evidence: Event Logs, Registry, Prefetch, LNK/Jump Lists, browser/download history, scheduled tasks, services, PowerShell logs, MFT, and USN Journal. Focus on the question each artifact can answer. | `notes/windows-artifacts.md` organized by investigative question |
+| Fri Jun 26 | Guided mini-triage of a small Windows artifact set. Build a 10-15-event UTC timeline, explain every command used, and give a five-minute briefing. | First mini-report, command journal, and self-critique |
 
-**Week 1 gate:** You can explain why one artifact rarely proves execution by
-itself and can distinguish evidence preservation from analysis.
+**Week 1 gate:** You can describe a basic investigation sequence, distinguish
+live response from dead-box analysis, explain why one artifact rarely proves
+execution by itself, and distinguish preservation from analysis.
 
 ## Week 2 — Windows endpoint investigation
 
@@ -253,6 +255,21 @@ Do not write “completed a DFIR lab.” Use evidence and outcomes:
   documenting findings, confidence, and evidentiary limitations.
 
 Replace broad claims with accurate numbers from the finished work.
+
+## AI and command-line standard
+
+AI assistance is permitted, but copying unexplained commands is not considered
+learning. For each new command:
+
+1. Predict what it will do before running it.
+2. Identify whether it reads or changes evidence.
+3. Run it first on a copy or controlled lab source.
+4. Explain the important flags in the case notebook.
+5. Interpret the output without asking AI first.
+6. Use documentation or AI afterward to check the interpretation.
+
+The goal is not memorizing syntax. The goal is independent investigative
+reasoning and safe tool use.
 
 ## Interview standard
 

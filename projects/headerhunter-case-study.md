@@ -47,6 +47,15 @@ Complete this section precisely before publication:
 
 Avoid saying “I built” when “I contributed to” is more accurate.
 
+Current attribution baseline:
+
+- The project requirements, forensic use case, and testing activity involved
+  the student.
+- Testing covered many file types across macOS, Windows, and Linux.
+- Codex generated the Python implementation.
+- The extent of personally reviewed, understood, modified, and validated code
+  must be documented before making stronger authorship claims.
+
 ## Engineering themes to discuss in interviews
 
 ### Evidence-aware output
@@ -141,14 +150,18 @@ Input file
 
 Use only approved, accurate wording and replace brackets with verified values:
 
-- Developed and tested a cross-platform Python forensic triage application
+- Defined requirements for and validated a cross-platform Python forensic
+  triage application
   supporting `[verified number]` encrypted-container and protocol families,
-  combining format-aware parsing with cautious entropy/statistical analysis.
-- Implemented defensive parsers and confidence-aware reporting that distinguish
+  testing it across macOS, Windows, and Linux with varied file types. This is
+  the safest current wording; refine it only when contribution details and
+  publication permission are confirmed.
+- Directed and reviewed confidence-aware reporting intended to distinguish
   confirmed file structures, exposed cryptographic metadata, heuristic
-  candidates, and unsupported inputs.
-- Built automated tests across known, malformed, unencrypted, and high-entropy
-  samples and packaged the application for `[approved operating systems]`.
+  candidates, and unsupported inputs. Use only if personal review can be
+  demonstrated.
+- Validated behavior across known, malformed, unencrypted, and high-entropy
+  samples on `[approved operating systems]`. Replace with verified details.
 - Translated forensic and password-recovery requirements into an analyst-facing
   CLI/GUI with documented limitations and follow-up guidance.
 
@@ -165,4 +178,3 @@ Prepare a five-minute explanation:
 
 If source publication is not authorized, use diagrams and synthetic examples
 rather than a live code walkthrough.
-
